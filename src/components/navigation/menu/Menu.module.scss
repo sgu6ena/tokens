@@ -1,0 +1,12 @@
+.list{
+  @apply flex gap-2;
+  .item{
+    @apply text-gray-500;
+    .active{
+      @apply text-blue-700 ;
+    }
+.inactive{
+  @apply  text-gray-600;
+}
+  }
+}
