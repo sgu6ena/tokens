@@ -1,0 +1,6 @@
+.logo {
+  @apply flex items-center;
+  .text {
+    @apply flex flex-col font-bold pl-3 text-gray-800;
+  }
+}

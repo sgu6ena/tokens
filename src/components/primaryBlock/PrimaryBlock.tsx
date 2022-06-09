@@ -1,12 +1,21 @@
 import {FC} from "react";
+
 type Props = {
-    children?: React.ReactNode
+    children?: React.ReactNode,
+    title?: string,
+    image?: string
 };
 
-const PrimaryBlock:FC<Props> = ({children}) => {
-    return (
-        <div className='block-shadow bg-white rounded p-20'>
-            {children}
+const PrimaryBlock: FC<Props> = ({children, title, image}) => {
+    return (<div>
+            <h3 className={'subtitle mb-8'}>{title}</h3>
+            <div className='block-shadow bg-white rounded-xl  md:flex-row flex-col flex-center-between flex-shrink-0 flex-grow-0'>
+                <div className={'px-20 py-16'}>{children}</div>
+
+                <div className={'flex-shrink-0 w-96 flex-grow-0 flex justify-center'}>
+                    <img src={image} className={'object-contain'}  alt={title}/>
+                </div>
+            </div>
         </div>
     );
 };

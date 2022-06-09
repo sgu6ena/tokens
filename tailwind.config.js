@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
-// const primary = '#E30B13'
+const primary = '#135DEA'
 
 
 module.exports = {
@@ -15,22 +15,22 @@ module.exports = {
         black: colors.black,
         white: colors.white,
         green: colors.green,
-        blue:{
+        blue: {
           300: '#F2F4F5',
-          700:'#135DEA',
+          700: '#135DEA',
         },
-        gray:{
-          300:'',
-          600:'#72777A',
-          700:'#5A6664',
-          900:'#090A0A',
+        gray: {
+          600: '#72777A',
+          700: '#5A6664',
+          800: '#404446',
+          900: '#090A0A',
         }
       }
     },
   },
   plugins: [
 
-    plugin(({ addComponents, theme, addUtilities }) => {
+    plugin(({addComponents, theme, addUtilities}) => {
       addComponents({
 
         '.text-link': {
@@ -43,30 +43,45 @@ module.exports = {
             textDecorationColor: 'rgba(255, 255, 255, 0.9)',
           },
         },
+        '.btn': {
+          background: primary,
+          padding: '16px 32px',
+          color: 'white',
+          borderWidth: '1px',
+          borderRadius: '8px',
+          transition: 'all 0.3s ease-in-out',
+          borderColor: primary,
+          '&:hover': {
+            color: primary,
+            background: 'white',
+            borderColor: primary,
+          },
+
+        }
 
       });
-          addUtilities({
-            '.block-shadow': {
-              textShadow: '1px 1px rgba(20, 20, 20, 0.08)',
-            },
+      addUtilities({
+        '.block-shadow': {
+          boxShadow: '0px 1px 24px 4px rgba(20, 20, 20, 0.08)',
+        },
 
-            '.outline-border-none': {
-              outline: 'none',
-              border: 'none',
-            },
+        '.outline-border-none': {
+          outline: 'none',
+          border: 'none',
+        },
 
-            '.flex-center-between': {
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-            },
+        '.flex-center-between': {
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        },
 
-            '.image-like-bg': {
-              objectPosition: 'center',
-              objectFit: 'cover',
-              pointerEvents: 'none',
-            },
-          })
+        '.image-like-bg': {
+          objectPosition: 'center',
+          objectFit: 'cover',
+          pointerEvents: 'none',
+        },
+      })
     }),
   ],
 }

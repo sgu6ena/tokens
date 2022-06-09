@@ -1,0 +1,6 @@
+.header {
+  nav {
+    @apply flex-center-between flex lg:flex-row flex-col my-4;
+    line-height: 18px;
+  }
+}

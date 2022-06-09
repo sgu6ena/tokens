@@ -1,10 +1,25 @@
-import React from 'react';
+import {FC, useState} from 'react';
+import styles from './Faq.module.scss'
+import classNames from "classnames";
 
-const Faq = () => {
+interface Props {
+    children?: React.ReactNode,
+    title: string
+    answer?: string
+}
+
+const Faq: FC<Props> = ({children, answer, title}) => {
+    const [open, setOpen] = useState(false)
     return (
-        <div>
-            <h3>Вопрос</h3>
-            <p>ответ</p>
+        <div className={styles.faq} onClick={() => setOpen(!open)}>
+            <div className={styles.question}>
+                <h5>{title}</h5>
+                   <span className={classNames(styles.button, open && styles.active )}></span>
+            </div>
+            <div className={classNames(open ? styles.active : styles.inactive, styles.answer)}>
+                <p>{answer}</p>
+                {children}
+            </div>
         </div>
     );
 };

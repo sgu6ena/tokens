@@ -1,12 +1,22 @@
 import {FC} from "react";
+import styles from './secondary.module.scss'
+
 type Props = {
     children?: React.ReactNode
+    image?: string,
+    text?: string | React.ReactNode
 };
 
-const SecondaryBlock:FC<Props> = ({children}) => {
+const SecondaryBlock: FC<Props> = ({children, image, text}) => {
     return (
-        <div className='block-shadow bg-white rounded p-5'>
-            {children}
+        <div className={styles.secondary} style={{}}>
+            <div className={styles.row}>
+                <div>{children}</div>
+                <div className={styles.imgWrapper}>
+                    <img src={image} alt={'электронная подпись'}/>
+                </div>
+            </div>
+            <div className={styles.text}>{text && text}</div>
         </div>
     );
 };

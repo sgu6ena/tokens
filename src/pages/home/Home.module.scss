@@ -1,0 +1,6 @@
+.secondary {
+  @apply flex-col flex gap-6;
+  .row {
+    @apply flex flex-col gap-6 lg:flex-row justify-between;
+  }
+}

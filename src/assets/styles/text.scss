@@ -1,0 +1,37 @@
+.subtitle{
+  @apply text-gray-600 text-4xl;
+  font-weight: 700;
+}
+
+.text-main {
+@apply text-2xl text-gray-600;
+}
+
+.text-secondary {
+  @apply text-lg text-gray-700;
+}
+
+.text-accent {
+  @apply text-blue-600;
+
+  &:hover {
+    color: transparent;
+    background-image: linear-gradient(90deg,#135DEA,  #135DEA70,  #135DEA   , #135DEA,   #135DEA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300px 300px;
+    background-position: 0 0;
+    animation: bp 2s infinite linear;
+    transition:all 0.3s ease-in-out;
+  }
+}
+
+
+@keyframes bp {
+  from {
+    background-position-x: -50px;
+  }
+  to {
+    background-position-x: 250px;
+  }
+}
