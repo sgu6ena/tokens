@@ -1,8 +1,8 @@
-
+const prefix = "/tokens"
 
 export enum RouteNames {
-    HOME = `/`,
-    DOCUMENTS = "/docs",
-    DOWNLOADS = "/downloads",
+    HOME = "/tokens/",
+    DOCUMENTS = "/tokens/docs",
+    DOWNLOADS = "/tokens/downloads",
     
 }

@@ -8,7 +8,7 @@ const AppRouter: FC = () => {
     return <BrowserRouter>
             <Routes>
                 {publicRoutes.map((route) => (
-                    <Route path={prefix+route.path} element={route.element}  key={route.path} />
+                    <Route path={route.path} element={route.element}  key={route.path} />
                 ))}
             </Routes>
         </BrowserRouter>
