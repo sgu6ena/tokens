@@ -1,6 +1,6 @@
 .header {
   nav {
-    @apply flex-center-between flex lg:flex-row flex-col my-4;
+    @apply md:flex-center-between flex gap-4 lg:flex-row flex-col my-4;
     line-height: 18px;
   }
 }

@@ -3,7 +3,7 @@
   width: 100%;
 
   .row {
-    @apply flex justify-between items-start gap-1;
+    @apply flex justify-between md:flex-row flex-col items-start gap-1;
   }
 
   h4 {
@@ -12,11 +12,13 @@
   }
 
   ul {
-    @apply list-disc ml-6;
+    @apply list-disc ml-6  ;
   }
-
+.children{
+  //@apply md:order-1 order-2;
+}
   .imgWrapper {
-    @apply flex-shrink-0  flex-grow-0 flex justify-center;
+    @apply flex-shrink-0  md:w-auto w-full flex-grow-0 flex justify-center;
     img {
       @apply object-contain;
     }

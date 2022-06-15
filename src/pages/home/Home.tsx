@@ -17,7 +17,9 @@ const Home: FC = () => {
         <div className={'text-secondary'}>Удостоверяющий центр выдает сертификаты электронной подписи
           для организаций и частных лиц.
         </div>
-        <button className={'btn w-fit'}>Получить сертификат</button>
+        <div className={'flex justify-center md:justify-start'}>
+          <button className={'btn w-fit'}>Получить сертификат</button>
+        </div>
       </MainBlock>
       
       

@@ -11,7 +11,7 @@ const SecondaryBlock: FC<Props> = ({children, image, text}) => {
     return (
         <div className={styles.secondary} style={{}}>
             <div className={styles.row}>
-                <div>{children}</div>
+                <div className={styles.children}>{children}</div>
                 <div className={styles.imgWrapper}>
                     <img src={image} alt={'электронная подпись'}/>
                 </div>

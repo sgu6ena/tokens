@@ -1,10 +1,12 @@
 .subtitle{
   @apply text-gray-600 text-4xl;
+  @apply md:text-left text-center;
   font-weight: 700;
 }
 
 .text-main {
 @apply text-2xl text-gray-600;
+
 }
 
 .text-secondary {

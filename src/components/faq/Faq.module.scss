@@ -3,13 +3,13 @@
   //transition: height 0.5s linear;
 
   .question {
-    @apply flex items-start justify-between;
+    @apply flex items-center gap-2 justify-between;
     h5 {
       @apply text-black text-xl;
     }
 
     .button {
-      @apply relative h-7 mt-0 w-7;
+      @apply relative h-7 mt-0 w-7 p-4;
 
       &:before,
       &:after {

@@ -1,20 +1,21 @@
 import React, {FC} from 'react';
 import Logo from "../logo/Logo";
 import Contacts from "../contacts/Contacts";
-
+import styles from "./Footer.module.scss"
+import classNames from "classnames";
 const Footer: FC = () => {
   return (
-    <div>
-      <div className={'bg-white mt-10 h-20 flex items-center'}>
-        <div className="container flex-center-between">
+    <footer>
+      <div className={styles.footer}>
+        <div className={classNames(styles.wrapper,'container')}>
           <Logo/>
           <Contacts/>
         </div>
       </div>
-      <div className={'bg-blue-600  h-8 flex items-center justify-center text-sm text-white'}>
+      <div className={styles.text}>
         IDC. Удостоверяющий центр. Все права защищены. 2022.
       </div>
-    </div>
+    </footer>
   );
 };
 
