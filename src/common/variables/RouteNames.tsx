@@ -1,5 +1,7 @@
+
+
 export enum RouteNames {
-    HOME = "/",
+    HOME = `/`,
     DOCUMENTS = "/docs",
     DOWNLOADS = "/downloads",
     

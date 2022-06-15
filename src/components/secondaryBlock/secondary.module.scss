@@ -14,9 +14,7 @@
   ul {
     @apply list-disc ml-6  ;
   }
-.children{
-  //@apply md:order-1 order-2;
-}
+
   .imgWrapper {
     @apply flex-shrink-0  md:w-auto w-full flex-grow-0 flex justify-center;
     img {
@@ -24,7 +22,7 @@
     }
   }
 
-  .text{
-@apply mt-4
+  .text {
+    @apply mt-4
   }
 }
