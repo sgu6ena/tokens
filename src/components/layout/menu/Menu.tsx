@@ -9,8 +9,10 @@ const Menu: FC = () => {
     <ul className={styles.list}>
       {headerMenu.map(item => (
         <li key={item.link} className={styles.item}>
-          <NavLink to={item.link} className={isActive =>
-            isActive ? styles.active : styles.inactive}>
+          <NavLink to={item.link}
+                   className={isActive => isActive ? "underline" : styles.inactive}
+          
+          >
             {item.title}
           </NavLink>
         </li>

@@ -3,7 +3,7 @@
   .item {
     @apply text-gray-500;
     .active {
-      @apply text-gray-800;
+      @apply text-blue-800 underline;
     }
 
     .inactive {

@@ -14,5 +14,4 @@ export const publicRoutes: IRoute[] = [
     {path: RouteNames.HOME, element: <Home/>},
     {path: RouteNames.DOCUMENTS, element: <Documents/>},
     {path: RouteNames.DOWNLOADS, element: <Downloads/>},
-    {path:'/tokens', element:<Home/>}
 ];
