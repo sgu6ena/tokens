@@ -7,6 +7,9 @@ import Layout from "../../components/layout/layout";
 import Title from "../../components/heading/Title";
 import Secondary from "./secondary";
 import {faqData} from "./faq.data";
+import {RouteNames} from "../../common/variables/RouteNames";
+
+
 
 const Home: FC = () => {
   return (
@@ -18,7 +21,7 @@ const Home: FC = () => {
           для организаций и частных лиц.
         </div>
         <div className={'flex justify-center md:justify-start'}>
-          <button className={'btn w-fit'}>Получить сертификат</button>
+          <a href={RouteNames.DOCUMENTS}>      <button className={'btn w-fit'}>Получить сертификат</button></a>
         </div>
       </MainBlock>
       
@@ -33,7 +36,7 @@ const Home: FC = () => {
       <PrimaryBlock title={'Как получить сертификат электронной подписи?'} image={'./images/arrow_down.png'}>
         <p className={'text-main'}>Для получения сертификата открытого ключа электронной подписи необходимо
           обратиться в Удостоверяющий центр, или его представительство и пройти процедуру регистрации.</p>
-        <button className={'btn mt-6 w-fit'}>Получить сертификат</button>
+        <a href={RouteNames.DOCUMENTS}>  <button className={'btn mt-6 w-fit'}>Получить сертификат</button></a>
       </PrimaryBlock>
       <div className={'flex flex-col gap-8'}>
         <h3 className={'subtitle'}>Частые вопросы</h3>

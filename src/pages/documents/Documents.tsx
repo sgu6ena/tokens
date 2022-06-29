@@ -12,24 +12,26 @@ const Documents: FC = () => {
       </div>
       <div>
         <p>
+          <a href="/docs/instrukciya_po_polucheniyu_ser1.pdf" target={"__blank"}
+             className={styles.mainlink}>
+            <DocumentIcon className={styles.icon}/>
+            <span>Инструкция по получению сертификата открытого ключа для юридические лиц</span></a></p>
+        <p>
+          <a href="/docs/instrukciya_po_polucheniyu_ser.pdf" target={"__blank"}
+             className={styles.mainlink}>
+            <DocumentIcon className={styles.icon}/>
+            <span>Инструкция по получению сертификата открытого ключа для физических лиц</span>
+          </a>
+        </p>
+        <hr />
+        <p >
           <a href="/docs/instrukciya_polzovatelya_dlya.pdf" target={"__blank"}
              className={styles.link}>
             <DocumentIcon className={styles.icon}/>
             <span>Инструкция пользователя для программы IDC Управление ключами</span>
           </a>
         </p>
-        <p>
-          <a href="/docs/instrukciya_po_polucheniyu_ser1.pdf" target={"__blank"}
-             className={styles.link}>
-            <DocumentIcon className={styles.icon}/>
-            <span>Инструкция по получению сертификата открытого ключа для юридические лиц</span></a></p>
-        <p>
-          <a href="/docs/instrukciya_po_polucheniyu_ser.pdf" target={"__blank"}
-             className={styles.link}>
-            <DocumentIcon className={styles.icon}/>
-            <span>Инструкция по получению сертификата открытого ключа для физических лиц</span>
-          </a>
-        </p>
+
         <p>
           <a href="/docs/instrukciya_po_organizacii_par.pdf" target={"__blank"}
              className={styles.link}>
