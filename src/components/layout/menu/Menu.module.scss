@@ -1,13 +1,15 @@
 .list {
   @apply flex  gap-8;
   .item {
-    @apply text-gray-500;
+    @apply font-bold  text-gray-500 text-lg;
+
     .active {
-      @apply text-blue-800 underline;
+      @apply underline underline-offset-4 transition-all ;
+
     }
 
     .inactive {
-      @apply text-blue-600;
+      @apply transition-all ;
     }
   }
 }
