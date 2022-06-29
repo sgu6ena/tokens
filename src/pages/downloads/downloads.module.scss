@@ -1,0 +1,6 @@
+.link {
+  @apply flex items-center btn fill-white w-fit hover:fill-blue-600 mb-10 mt-3 gap-4 text-3xl p-3;
+  .icon {
+    @apply h-12 w-12;
+  }
+}
