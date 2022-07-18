@@ -45,7 +45,7 @@ const Block2 = () => (
 )
 
 const Block3 = () => (
-    <SecondaryBlock image={'./images/3.png'}>
+    <SecondaryBlock color='#F3F3F3' image={'./images/3.png'}>
         <h4>
             <span className={'text-accent'}>Криптографическая</span> основа ЭП</h4>
         <p>

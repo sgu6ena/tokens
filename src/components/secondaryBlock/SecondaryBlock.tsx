@@ -5,11 +5,12 @@ type Props = {
     children?: React.ReactNode
     image?: string,
     text?: string | React.ReactNode
+  color?:string
 };
 
-const SecondaryBlock: FC<Props> = ({children, image, text}) => {
+const SecondaryBlock: FC<Props> = ({children, image, text, color}) => {
     return (
-        <div className={styles.secondary} style={{}}>
+        <div className={styles.secondary} style={{background:color}}>
             <div className={styles.row}>
                 <div className={styles.children}>{children}</div>
                 <div className={styles.imgWrapper}>

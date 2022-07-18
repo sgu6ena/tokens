@@ -1,10 +1,23 @@
 .link {
-  @apply flex items-center btn fill-white hover:fill-blue-600 mb-4 mt-3 gap-5 text-2xl py-2 px-5;
+  @apply flex items-center font-medium fill-white hover:fill-blue-600 text-gray-600  mt-2 gap-2 text-lg py-1 px-5;
+  span {
+    @apply border-b-2 transition-all;
+  }
 
+  .icon {
+    @apply text-blue-600 h-12 w-10 transition-all ;
+  }
+  &:hover{
+    span {
+      @apply border-b-2 border-blue-600 transition-all;
+    }
+    .icon {
+      @apply text-blue-800 transition-all;
+    }
+  }
 }
-.mainlink{
-  @apply flex items-center bg-blue-800 btn fill-white hover:fill-blue-800 border-blue-800 mb-4 mt-3 gap-5 text-2xl py-2 px-5;
+
+.mainlink {
+  @apply flex items-center bg-blue-800 btn fill-white hover:fill-blue-800 border-blue-800 mb-4 mt-3 gap-5 text-xl py-1 px-5;
 }
-.icon {
-     @apply h-12 w-10 ;
-   }
+

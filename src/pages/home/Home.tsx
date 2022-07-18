@@ -14,7 +14,7 @@ import {RouteNames} from "../../common/variables/RouteNames";
 const Home: FC = () => {
   return (
     <Layout>
-      <MainBlock img={'./images/main.png'}>
+      <MainBlock img={'./images/main2.png'}>
         <Title>Сертификат<br/>
           электронной <span className={'text-accent'}>подписи</span></Title>
         <div className={'text-secondary'}>Удостоверяющий центр выдает сертификаты электронной подписи
@@ -26,7 +26,7 @@ const Home: FC = () => {
       </MainBlock>
       
       
-      <PrimaryBlock title={"Что такое электронная подпись?"} image={'./images/aboutService.png'}>
+      <PrimaryBlock title={"Что такое электронная подпись?"} image={'./images/aboutService.png'} color={'#F3F3F3'}>
         <p className={'text-main'}>Информация в электронной форме, которая присоединена или иным образом связана
           с другой информацией в электронной форме и которая используется для определения лица, подписывающего
           информацию.</p>
@@ -38,7 +38,7 @@ const Home: FC = () => {
           обратиться в Удостоверяющий центр, или его представительство и пройти процедуру регистрации.</p>
         <a href={RouteNames.DOCUMENTS}>  <button className={'btn mt-6 w-fit'}>Получить сертификат</button></a>
       </PrimaryBlock>
-      <div className={'flex flex-col gap-8'}>
+      <div className={'flex flex-col gap-6'}>
         <h3 className={'subtitle'}>Частые вопросы</h3>
         {faqData.map(item => <Faq title={item.title} answer={item.content} key={item.title}/>)}
       </div>
