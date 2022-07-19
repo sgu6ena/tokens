@@ -25,8 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "rm -rf ./build &&  npm run build",
+    "deploy": "scp -r ./build/* root@10.5.219.216:/data/certcenter"
   },
   "eslintConfig": {
     "extends": [
