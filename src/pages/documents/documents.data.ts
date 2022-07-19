@@ -40,5 +40,8 @@ export const documents:IDocuments[]=[
     title:'Политика обработки персональных данных',
     link:'https://idc.md/storage/app/media/docs/personal-data-proctect/Personal-data-politics.pdf'
   },
-  
+  {
+    title:'СОГЛАСИЕ на обработку персональных данных ',
+    link:'/docs/agreement.pdf'
+  },
 ]
